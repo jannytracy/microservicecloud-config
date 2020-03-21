@@ -1,34 +1,34 @@
-﻿spring:
-  profiles:
+﻿spring: 
+  profiles: 
     active: dev
 
 ---
-server:
+server: 
   port: 8201
 
-spring:
-  profiles:
+spring: 
+  profiles: 
     active: dev
-    application:
+    application: 
       name: microservicecloud-config-client
 
-eureka:
-  client:
-    service-url:
+eureka: 
+  client: 
+    service-url: 
       defaultZone: http://eureka-dev.com:7001/eureka/
 
 
 ---
-server:
+server: 
   port: 8202
 
-spring:
-  profiles:
+spring: 
+  profiles: 
     active: test
-    application:
+    application: 
       name: microservicecloud-config-client
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-dev.com:7001/eureka/
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka-test.com:7001/eureka/
