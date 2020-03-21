@@ -3,24 +3,25 @@ spring:
     active: dev
 
 ---
+server:
+  port: 8021
 spring:
-  profiles: prod
+  profiles: test
   application:
-    name: config-single-client
-  cloud:
-     config:
-       uri: http://localhost:3301
-       label: master
-       profile: prod
-
+    name: microservicecloud-config-client-test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-test.com
 
 ---
+server:
+  port: 8022
 spring:
   profiles: dev
   application:
-    name: config-single-client
-  cloud:
-     config:
-       uri: http://localhost:3301
-       label: master
-       profile: dev
+    name: microservicecloud-config-client-dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-dev.com
