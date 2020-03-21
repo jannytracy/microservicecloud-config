@@ -6,10 +6,10 @@
 spring:
   profiles: dev
   application:
-    name: microsoft-dev
+    name: microsoft-dev_1
 
 ---
 spring:
   profiles: test
   application:
-    name: microsoft-test
+    name: microsoft-test_1
