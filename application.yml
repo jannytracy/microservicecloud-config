@@ -1,17 +1,15 @@
 ﻿spring:
-  profiles: 
-    active: 
-     - dev
+  profiles:
+    active: dev
 
 ---
 spring:
   profiles: dev
-    application: 
-     - name: dev
-
+  application:
+    name: microsoft-dev
 
 ---
 spring:
   profiles: test
-    application: 
-     - name: test
+  application:
+    name: microsoft-test
